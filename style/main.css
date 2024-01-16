@@ -66,6 +66,12 @@ header h1{
   padding: 30px;
 }
 
-.task{
-  
+.task section{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#arrow{
+  font-size: 2em;
+  max-height: 3px;
 }
