@@ -3,21 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(246, 248, 249);
 }
 
 /* Header */
 header{
-  height: 80px;
+  padding: 10px 20px;
   background-color: white;
 }
 
 #logo{
-  padding: 10px;
   vertical-align: middle;
 }
 
@@ -48,14 +47,22 @@ header h1{
   cursor: pointer;
 }
 
-#add-section-button {
+#add-task-button:hover{
+  background-color: rgb(88, 144, 203);
+}
+
+#add-section-button{
   text-align: center;
   background-color: white;
   color: rgb(156, 156, 156);
   padding: 7px;
+  border: 1px solid rgb(156, 156, 156);
   border-radius: 5px;
-  border-color: rgb(222, 224, 228);
   cursor: pointer;
+}
+
+#add-section-button:hover {
+  background-color: rgb(240, 240, 240);
 }
 
 /* Contenitore auto-adattante */
@@ -75,32 +82,41 @@ header h1{
   font-weight: bold;
 }
 
-#arrow{
-  font-size: 0.7em;
-  vertical-align: bottom;
+.task::before{
+  content: "\2BC6";
+  padding-right: 5px;
 }
 
 .check{
-  font-size: 10px;
-  border-radius: 100%;
-  padding: 2px;
-  background: #fff;
-  border: 2px solid limegreen;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid limegreen;
   color: limegreen;
+  font-size: 1.1rem;
+  border-radius: 50%;
   text-align: center;
+  line-height: 20px;
 }
 
 .nocheck{
-  font-weight: bolder;
-  font-size: 20px;
-  color: rgb(215, 96, 81);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid rgb(211, 19, 19);
+  color: rgb(211, 19, 19);
+  font-size: 1.2rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 19px;
 }
 
 .text{
   font-weight: 520;
+  padding-left: 10px;
 }
 
-/* Categorie */
+/* Badges */
 .editorial{
   font-weight: bold;
   font-size: 0.7em;
